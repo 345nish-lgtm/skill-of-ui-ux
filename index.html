@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f1e9">
+<meta name="description" content="Aritra Biswas — UI/UX design, interaction studies and thoughtful digital experiences.">
+<title>Aritra Biswas — UI/UX & Interaction Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="curtain" aria-hidden="true"><b style="background:#e8472b"></b><b style="background:#f2b705;animation-delay:.08s"></b><b style="background:#1f7a6d;animation-delay:.16s"></b><b style="background:#f0a6a0;animation-delay:.24s"></b><b style="background:#e8472b;animation-delay:.32s"></b></div>
+<canvas id="cv" aria-hidden="true"></canvas>
+<canvas id="g3" aria-hidden="true"></canvas>
+<div class="hud"><span>Motion study</span><a href="#mk"><span id="st">01 / 08 Start</span></a></div>
+<div class="bar" id="bar"></div>
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="#s1">AB<span>✳</span></a>
+  <div class="nav-links"><a href="#s3">Experiments</a><a href="#project">Selected work</a><a href="#mk">About</a><a href="#mk">Contact ↗</a></div>
+</nav>
+
+<main>
+<section class="hero" id="s1" data-n="Start">
+<h1 id="t" aria-label="Things move when you do."></h1>
+<p class="hero-kicker">UI/UX DESIGNER IN THE MAKING · KOLKATA, INDIA</p><p>A little curiosity, a lot of iteration, and a belief that the details make the experience.</p><a class="scroll-cue" href="#s2">SCROLL TO EXPLORE <span>↓</span></a>
+</section>
+
+<section class="mq" id="smq" aria-hidden="true"><div id="m1">drift &nbsp; tumble &nbsp; unspool &nbsp; swell &nbsp; drift &nbsp; tumble &nbsp; unspool &nbsp; swell</div><div id="m2" class="o">swell &nbsp; unspool &nbsp; tumble &nbsp; drift &nbsp; swell &nbsp; unspool &nbsp; tumble &nbsp; drift</div></section>
+
+<section class="steps" id="s2" data-n="Build">
+<div class="stick">
+<div class="glyph" id="gl" data-i="0"></div>
+<div class="sw"><h2 class="on">Point</h2><h2>Line</h2><h2>Shape</h2><h2>Motion</h2></div>
+<div class="sd"><p class="on">Everything begins as one position on a screen.</p><p>Move a point and it leaves a path behind.</p><p>Close the path and the path becomes a body.</p><p>Change the body over time and it feels alive.</p></div>
+</div>
+</section>
+
+<section class="blk" id="s3" data-n="Touch">
+<h2>Touch the grid.</h2>
+<p>Drag across it and the dots wake up. Tap to send a wave.</p>
+</section>
+
+<section class="lens" id="s4" data-n="Lens" aria-label="Same words, seen two ways">
+<div class="ly b"><h2>What you see.</h2></div>
+<div class="ly t" id="lt" aria-hidden="true"><h2>What they see.</h2></div>
+</section>
+
+<section class="rows" id="s5" data-n="Easing">
+<h2>Same distance. Different feeling.</h2>
+<div class="row"><button aria-expanded="false">Ease out</button><div class="pn"><div><div class="tk" style="--e:cubic-bezier(.2,.9,.2,1)"><i></i></div><p>Fast at first, soft at the end. It is how things arrive on a screen.</p></div></div></div>
+<div class="row"><button aria-expanded="false">Overshoot</button><div class="pn"><div><div class="tk" style="--e:cubic-bezier(.34,1.56,.64,1)"><i></i></div><p>It goes a little too far, then settles back. This is where the playful feel comes from.</p></div></div></div>
+<div class="row"><button aria-expanded="false">Linear</button><div class="pn"><div><div class="tk" style="--e:linear"><i></i></div><p>Constant speed. Nothing in nature moves like this, so it looks mechanical.</p></div></div></div>
+<div class="row"><button aria-expanded="false">Steps</button><div class="pn"><div><div class="tk" style="--e:steps(6)"><i></i></div><p>Jumps instead of glides, like a flip book.</p></div></div></div>
+<div class="row"><button aria-expanded="false">Wind-up</button><div class="pn"><div><div class="tk" style="--e:cubic-bezier(.68,-.55,.27,1.55)"><i></i></div><p>It pulls back first, then launches. The pause tells you something is about to happen.</p></div></div></div>
+</section>
+
+<section class="drw" id="sdraw" data-n="Draw"><div class="stick"><svg viewBox="0 0 1000 600" aria-hidden="true"><path pathLength="1" stroke="#e8472b" d="M20 320 C 150 20, 260 20, 350 320 S 560 620, 660 320 S 860 20, 980 320"/><path pathLength="1" stroke="#1f7a6d" d="M20 380 C 160 120, 260 120, 350 380 S 560 640, 660 380 S 860 120, 980 380"/><path pathLength="1" stroke="#f2b705" d="M20 440 C 170 220, 270 220, 350 440 S 560 660, 660 440 S 860 220, 980 440"/></svg><p class="cap">Three lines, drawn only as far as you have scrolled.</p></div></section>
+
+<section class="hz" id="shz" data-n="Slide"><div class="stick"><div class="track" id="tr">
+<div class="pn2" style="background:var(--gold);color:#14201b;border-radius:48% 52% 6% 6% / 30% 30% 6% 6%"><h2>Slide</h2><p>The page turns sideways while you keep scrolling down.</p></div>
+<div class="pn2" style="background:var(--sea);color:#e4e8e2;border-radius:6px 6px 50% 50% / 6px 6px 22% 22%"><h2>Stretch</h2><p>Outlines change as shapes cross the screen.</p></div>
+<div class="pn2" style="background:var(--clay);color:#14201b;border-radius:50%;align-items:center;text-align:center;justify-content:center"><h2>Turn</h2><p>Circles stay still. Everything around them does not.</p></div>
+<div class="pn2" style="background:var(--fg);color:var(--bg);border-radius:0 60% 0 60%"><h2>Settle</h2><p>Then it all comes to rest.</p></div>
+</div></div></section>
+
+<section class="opn" id="s3d" data-n="Open"><div class="stick"><h2>Open it up.</h2><p>Every shape has a smaller one inside. Keep scrolling and the shells fade away.</p></div></section>
+
+<section class="brk" id="s6" data-n="Break">
+<div class="stick"><h2 style="font-size:clamp(50px,13vw,200px)">Pull it apart.</h2><div class="sd"><p class="on" style="position:static">Keep scrolling. The lines snap and every dot drifts away.</p></div></div>
+</section>
+
+<section class="blk" id="s7" data-n="Reframe">
+<h2>Same dots. New pattern.</h2>
+<p>The same points, now placed by the angle a sunflower uses for its seeds.</p>
+</section>
+
+<section class="project" id="project" data-n="Work">
+  <div class="project-head"><p class="eyebrow">01 — SELECTED COLLABORATION</p><h2>VoiceGuard<br><em>AI</em></h2><p class="project-intro">A voice-controlled home automation concept, explored through the lens of interface design and user experience.</p></div>
+  <div class="project-body">
+    <div class="project-art" aria-label="Abstract interface composition"><div class="art-ring"></div><div class="art-card"><span class="live-dot"></span><small>VOICEGUARD · CONTROL PANEL</small><strong>Good evening.</strong><p>Your space, one voice away.</p><div class="art-controls"><span>FAN <b>ON</b></span><span>LIGHT <b>ON</b></span></div></div><span class="art-note">DESIGN STUDY / 2026</span></div>
+    <div class="project-copy"><p class="eyebrow">MY CONTRIBUTION</p><h3>Making the interaction feel simple.</h3><p>I’m part of a team developing VoiceGuard AI. My focus is the UI/UX side: thinking through the user journey, presenting device states clearly, and shaping an interface that feels approachable.</p><div class="project-tags"><span>User flows</span><span>Interface design</span><span>Interaction thinking</span></div><p class="role-note">My role is limited to UI/UX design. AI, voice-processing, electronics and backend development are handled by other team members.</p></div>
+  </div>
+</section>
+
+<section class="mk" id="mk" data-n="Maker">
+<div class="ph" id="ph"><img alt="Portrait of the maker" src="assets/photo.jpg"></div>
+<div>
+<h2>Aritra Biswas</h2>
+<ul>
+<li><b>First year, CSE (AI)</b>Learning by building things that move, switch and respond.</li>
+<li><b>UEM Kolkata</b>Based in Kolkata, West Bengal.</li>
+<li><b>VoiceGuard AI</b>Team project. I contribute to the UI/UX design and user experience.</li>
+<li><b>Find me</b><a href="https://github.com/345nish-lgtm" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/aritra-biswas-2339873ba" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/zenith.null" target="_blank" rel="noopener">Instagram</a></li>
+</ul>
+</div>
+</section>
+<p class="foot">Designed with curiosity. Built with care. <span>© 2026 Aritra Biswas</span></p>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
